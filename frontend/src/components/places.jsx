@@ -129,7 +129,7 @@ export default function Places({ locationName, index }) {
   }
 
   return (
-    <div >
+    <div className=' bg-gray-50'>
       <div className="w-full flex-col top-0 ">{RenderFilterCard()}</div>
       {places && places.length === 0 ? (
         <p className=" ml-10 container border rounded-md shadow bg-transparent p-6 pl-12  mt-6 mb-12 font-bold text-7xl w-2/3 text-indigo-700">Oops!! No Places Available.
@@ -141,7 +141,7 @@ export default function Places({ locationName, index }) {
               places.map((place, index) => (
                 <Card
                   key={index}
-                  className="mb-6 md:max-w-4xl mr-6 hover:shadow-md rounded-sm overflow-hidden"
+                  className="mb-6 md:max-w-4xl mr-6 hover:shadow-md rounded-md overflow-hidden"
                 >
                   <img
                     src={place.image}

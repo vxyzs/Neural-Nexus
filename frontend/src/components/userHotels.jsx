@@ -43,10 +43,10 @@ function UserHotels({ planid }) {
 
 
   return (
-    <div>
+    <div className=' bg-gray-50'>
   
     <div className="grid grid-cols-1  gap-2 mt-6 mb-10 ml-10 ">
-    <Button className=" w-20 mx-auto mb-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full shadow z-10" onClick={handleUpdate}>
+    <Button color='blue' className=" w-20 mx-auto mb-2 bg-blue-500 text-white py-2 px-4 rounded-full shadow z-10" onClick={handleUpdate}>
         Update
       </Button>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 border-b-2">
@@ -54,7 +54,7 @@ function UserHotels({ planid }) {
             hotels.map((hotel, index) => (
               <Card
             key={index}
-            className="mb-6 md:max-w-4xl mr-6 rounded-sm overflow-hidden"
+            className="mb-6 md:max-w-4xl mr-6 rounded-md overflow-hidden"
           >
             <img
               src={hotel.imageUrl}

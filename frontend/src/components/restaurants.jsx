@@ -123,7 +123,7 @@ export default function Restaurants({ locationName, index }) {
   }
 
   return (
-    <div >
+    <div className=' bg-gray-50'>
       <div className="w-full flex-col top-0 ">{RenderFilterCard()}</div>
       {restaurants && restaurants.length === 0 ? (
         <p className=" ml-10 container border rounded-md shadow bg-white p-6 pl-12  mt-6 mb-12 font-bold text-indigo-700 text-7xl w-2/3">Oops!! No Restaurants Available.
@@ -136,7 +136,7 @@ export default function Restaurants({ locationName, index }) {
               restaurants.map((restaurant, index) => (
                 <Card
                   key={index}
-                  className="mb-6 md:max-w-4xl mr-6 hover:shadow-md rounded-sm overflow-hidden"
+                  className="mb-6 md:max-w-4xl mr-6 hover:shadow-md rounded-md overflow-hidden"
                 >
                   <img
                     src={restaurant.image}

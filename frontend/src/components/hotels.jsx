@@ -293,7 +293,7 @@ export default function Hotels({
   }
 
   return (
-    <div className="bg-white">
+    <div className="bg-gray-50">
       <div className="w-full flex-col top-0 ">{RenderFilterCard()}</div>
       {hotels && hotels.length === 0 ? (
         <p className=" ml-10 container border rounded-md shadow p-6 pl-12  mt-6 mb-12 font-bold text-7xl w-2/3 bg-transparent text-indigo-700">
@@ -306,7 +306,7 @@ export default function Hotels({
               hotels.map((hotel, index) => (
                 <Card
                   key={index}
-                  className="mb-6 md:max-w-4xl mr-6 rounded-sm overflow-hidden"
+                  className="mb-6 md:max-w-4xl mr-6 rounded-md overflow-hidden"
                 >
                   <img
                     src={hotel.imageUrl}

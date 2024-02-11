@@ -248,7 +248,7 @@ export default function Flights({ locationName, startDate, endDate, adults, inde
             </div>
           </div>
         </Card>
-      </div >
+      </div>
     );
   }
 
@@ -266,7 +266,7 @@ export default function Flights({ locationName, startDate, endDate, adults, inde
 
 
   return (
-    <div>
+    <div className=' bg-gray-50'>
       <div className='w-full flex-col top-0 '>
         {
           RenderFilterCard()

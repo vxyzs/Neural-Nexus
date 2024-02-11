@@ -18,11 +18,11 @@ export default function SpecificPlan() {
 
 
   return (
-    <div className='w-screen bg-white'>
+    <div className='w-screen bg-gray-50'>
       <div className='w-full mt-0'>
         <Navbar />
       </div>
-      <Tabs aria-label="Tabs with icons" style="underline" className='pl-6 pt-8 pb-4 font-bold text-base rounded-md shadow text-center text-blue-500 flex justify-center w-screen' >
+      <Tabs aria-label="Tabs with icons" style="underline" className='pl-6 pt-8 pb-4 pr-6 font-bold text-base rounded-md text-center text-blue-500 flex justify-center w-screen' >
         <Tabs.Item title="Hotels" icon={FaHotel} className='text-base' >
           <Hotels planid={id} />
         </Tabs.Item>

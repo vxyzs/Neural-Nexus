@@ -42,8 +42,9 @@ function UserPlaces({ planid }) {
   };
 
   return (
+    <div className=' bg-gray-50'>
   <div className="grid grid-cols-1  gap-2 mt-6 mb-12 ml-10 ">
-  <Button className=" w-20 mx-auto mb-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full shadow z-10" onClick={handleUpdate}>
+  <Button color='blue' className=" w-20 mx-auto mb-2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full shadow z-10" onClick={handleUpdate}>
         Update
       </Button>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
@@ -51,7 +52,7 @@ function UserPlaces({ planid }) {
             places.map((place, index) => (
               <Card
                 key={index}
-                className="mb-6 md:max-w-4xl mr-6 hover:shadow-md rounded-sm overflow-hidden"
+                className="mb-6 md:max-w-4xl mr-6 hover:shadow-md rounded-md overflow-hidden"
               >
                 <img
                   src={place.image}
@@ -81,6 +82,7 @@ function UserPlaces({ planid }) {
               </Card>
         ))}
       </div>
+    </div>
     </div>
   );
 }
